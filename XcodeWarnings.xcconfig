@@ -2,6 +2,19 @@
 //  Copyright 2020 Quality Coding, Inc. See LICENSE.txt
 //  Source: https://github.com/jonreid/XcodeWarnings
 
+// ------- DISABLED RULES -------
+
+// Apple Clang - Warning Policies
+//GCC_WARN_PEDANTIC = YES
+//GCC_TREAT_WARNINGS_AS_ERRORS = YES
+//SWIFT_TREAT_WARNINGS_AS_ERRORS = YES
+
+// Static Analyzer - Analysis Policy
+//CLANG_STATIC_ANALYZER_MODE_ON_ANALYZE_ACTION = Deep
+//CLANG_STATIC_ANALYZER_MODE = Deep
+
+// ------- ENABLED RULES -------
+
 // Apple Clang - Address Sanitizer
 CLANG_ADDRESS_SANITIZER_CONTAINER_OVERFLOW = YES
 
@@ -19,11 +32,6 @@ ENABLE_STRICT_OBJC_MSGSEND = YES
 // Apple Clang - Undefined Behavior Sanitizer
 CLANG_UNDEFINED_BEHAVIOR_SANITIZER_INTEGER = YES
 CLANG_UNDEFINED_BEHAVIOR_SANITIZER_NULLABILITY = YES
-
-// Apple Clang - Warning Policies
-//GCC_WARN_PEDANTIC = YES
-//GCC_TREAT_WARNINGS_AS_ERRORS = YES
-//SWIFT_TREAT_WARNINGS_AS_ERRORS = YES
 
 // Apple Clang - Warnings - All languages
 CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES
@@ -104,8 +112,6 @@ CLANG_WARN__ARC_BRIDGE_CAST_NONARC = YES
 
 // Static Analyzer - Analysis Policy
 RUN_CLANG_STATIC_ANALYZER = YES
-CLANG_STATIC_ANALYZER_MODE_ON_ANALYZE_ACTION = Deep
-CLANG_STATIC_ANALYZER_MODE = Deep
 
 // Static Analyzer - Generic Issues
 CLANG_ANALYZER_DEADCODE_DEADSTORES = YES
